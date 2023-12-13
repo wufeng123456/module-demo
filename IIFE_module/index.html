@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 验证不被外部变量影响 -->
+  <script src="./a.js"></script>
+  <script src="./b.js"></script>
+
+  <!-- 验证内部变量不影响外部 -->
+  <!-- <script src="./b.js"></script>
+  <script src="./a.js"></script> -->
+</head>
+<body>
+</body>
+<script>
+  // IIFE不被外部变量影响
+  printName()
+  // IIFE内部变量不影响外部
+  // printNameB()
+</script>
+</html>
